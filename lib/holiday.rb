@@ -54,6 +54,14 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+
+     # There are two ways we might go about outputting a big block of text. One way
+    # is to iterate through everything we want output, and puts it line by line. Another
+    # way is to build a large string, and puts it all at once. How you choose to do it
+    # is entirely up to you, and depends on what you think works best in any given
+    # situation.
+
+    
   holiday_hash.each do |season, data|
     puts "#{season.to_s.capitalize!}:"
     data.each do |holiday, supply|
